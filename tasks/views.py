@@ -49,4 +49,4 @@ def create_task(request):
                     {"error": "Internal server error"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
                 )
 
-            return Response({"text": text}, status=status.HTTP_201_CREATED)
+            return Response({"text": text}, status=status.HTTP_200_OK)
