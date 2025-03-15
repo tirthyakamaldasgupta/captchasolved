@@ -15,7 +15,7 @@ model = VisionEncoderDecoderModel.from_pretrained(
 
 
 @api_view(["POST"])
-def create_task(request):
+def create_task_sync(request):
     serializer = TaskSerializer(data=request.data)
 
     if not serializer.is_valid():
